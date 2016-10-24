@@ -1,6 +1,5 @@
 var gulp = require('gulp'), // Подключаем Gulp
     sass = require('gulp-sass'), //Подключаем Sass пакет,
-    browserSync = require('browser-sync'), // Подключаем Browser Sync
     concat = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     uglify = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
     rename = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
@@ -29,6 +28,7 @@ var postcss = require('gulp-postcss'),//Блиотека-парсер стиле
 
 
 
+
 gulp.task('css-libs', function() { // Создаем таск css-libs
     var processors = [
         cssnano
@@ -39,9 +39,7 @@ gulp.task('css-libs', function() { // Создаем таск css-libs
         .pipe(postcss(processors))// сжымаем
         .pipe(concat('libs.min.css'))// объеденяем в файл
         .pipe(gulp.dest('css')) // Выгружаем результата в папку app/css
-        .pipe(browserSync.reload({
-            stream: true
-        })) // Обновляем CSS на странице при изменении
+ // Обновляем CSS на странице при изменении
 });
 
 gulp.task('sass', function() { // Создаем таск Sass
@@ -74,24 +72,9 @@ gulp.task('sass', function() { // Создаем таск Sass
         .pipe(sourcemaps.write('.', { sourceRoot: 'css-source' }))
         .pipe(plumber.stop())
         .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
 });
 
-gulp.task('browser-sync', function() { // Создаем таск browser-sync
-    browserSync({ // Выполняем browserSync
-        proxy: {
-            target: 'loaf_furniture' // Директория для сервера - app
-        },
-        ghostMode: {
-            clicks: true,
-            forms: true,
-            scroll: true
-        },
-        notify: false // Отключаем уведомления
-    });
-});
+
 
 gulp.task('compress', ['clean'], function() {// Создаем таск compress
     return gulp.src('app/js/*.js')// Берем все необходимые библиотеки
@@ -124,10 +107,7 @@ gulp.task('watch', ['compress', 'extend', 'css-libs', 'img', 'sass'], function()
     gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch(['app/html/*.html'], ['extend']);// Наблюдение за HTML-файлами
-    gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML-файлами
-    gulp.watch('app/js/*', function() {
-        gulp.run('compress');
-    }, browserSync.reload); // Наблюдение за JS файлами в папке js
+
 });
 
 gulp.task('img', function() {
@@ -141,9 +121,6 @@ gulp.task('img', function() {
             use: [pngquant()]
         })))
         .pipe(gulp.dest('img'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
 });
 
 /*
