@@ -30,4 +30,14 @@ $(document).ready(function () {
         return false;
     });
     /*close go up arrow*/
+
+    /*single modal toogle block*/
+    $('.menu-icon').click(function(){
+
+        $(".top-menu").slideToggle("slow",function() {
+
+        });
+        return false;
+    });
+    /*close single modal toogle block*/
 });
