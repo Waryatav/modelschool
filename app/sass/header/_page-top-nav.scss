@@ -10,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     width: 100%;
     float: left;
@@ -19,7 +19,7 @@
     padding-top: 42px;
     padding-bottom: 39px;
     &__item{
-      flex: 1 0 0;
+      /*flex: 1 0 0;*/
       height: 35px;
       position: relative;
       float: left;
@@ -30,7 +30,7 @@
       color: #dfdec0;
       text-transform: uppercase;
       font-family: 'HelveticaNeueCyrMedium';
-      padding: 10px 0;
+      padding: 10px 15px;
       text-align: center;
       margin-right: 11px;
       -webkit-transition: all ease-out 300ms;
