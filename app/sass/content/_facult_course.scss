@@ -19,9 +19,10 @@
     background-color: #4c4547;
     margin-bottom:10px;
     margin: 0 auto;
-    margin-bottom: 50px;
   }
   .faculties_course-items{
+    margin-bottom:100px;
+    overflow: hidden;
     width:100%;
     float: left;
     position: relative;
@@ -29,9 +30,13 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     .faculties_course-item{
+
+      margin-top: 50px;
       position: relative;
       width:33.3%;
+      float: left;
       height:580px;
+      padding: 0 15px;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
@@ -88,10 +93,12 @@
       }
       .course-img{
         position: absolute;
-        left: 13%;
-        top:72px;
+        top: 192px;
+        left: 54%;
         z-index: 1;
+        width:80vw;
       }
+
       //
       $size: 30vw;
 
@@ -107,7 +114,7 @@
       .w1 {
         position: absolute;
         top: 34%;
-        left: -30px;
+        left: -20%;
         height: $size / 1.73205081;
         width: $size;
         transform: translateY(-50%) rotate(120deg);
@@ -144,7 +151,7 @@
         transform: translateX(-50%) translateY(-50%);
         //filter: blur(1px);
       }
-      //
+
       .more-link{
         display: block;
         height: 43px;
@@ -164,5 +171,14 @@
         }
       }
     }
+  }
+  .bot-bg{
+    display: block;
+    width: 100%;
+    height:820px;
+    position: absolute;
+    bottom: 0;
+    background: url("/img/bot_bg.png");
+    background-position: 20% 0;
   }
 }
