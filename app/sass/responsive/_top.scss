@@ -24,19 +24,6 @@
 
 @media only screen and (max-width: 1025px) {
 
-    .faculties{
-      .faculties-item{
-        width: 100%;
-        height: auto;
-        img{
-          object-fit: contain;
-        }
-      }
-      .faculties-item:nth-child(1),.faculties-item:nth-child(4),.faculties-item:nth-child(5){
-        padding-bottom:55px;
-      }
-
-    }
 }
 
 @media only screen and (max-width: 990px) {
