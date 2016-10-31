@@ -123,7 +123,7 @@ gulp.task('watch', ['compress', 'extend', 'css-libs', 'img', 'sass'], function()
     gulp.watch('app/libs/**/*', ['css-libs']); // Наблюдение за папкой libs
     gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
-    gulp.watch(['app/html/*.html'], ['extend']);// Наблюдение за HTML-файлами
+    gulp.watch(['app/html/pages/*.html'], ['extend']);// Наблюдение за HTML-файлами
     gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML-файлами
     gulp.watch('app/js/*', function() {
         gulp.run('compress');

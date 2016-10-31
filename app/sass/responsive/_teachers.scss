@@ -24,29 +24,21 @@
 
 @media only screen and (max-width: 1025px) {
 
-  .hexagon-bg{
-    display: none;
-  }
-
-  .page-logo .hexagon{
-    top:149px;
-  }
-.header-news{
-
-  .menu-icon{
-    top: -70px important;
-  }
-}
-.page-logo{
-  top:56px;
-}
 }
 
-
-
-
+@media only screen and (max-width: 720px) {
+  .teachers{
+    .teachers-item{
+      width: 47.6%;
+    }
+  }
+}
 @media only screen and (max-width: 570px) {
-
+ .teachers{
+    .teachers-item{
+      width: 98.8%;
+    }
+ }
 }
 
 @media only screen and (max-width: 420px) {
