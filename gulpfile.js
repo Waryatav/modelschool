@@ -102,6 +102,22 @@ gulp.task('extend', function () {
 
 });
 
+<<<<<<< HEAD
+gulp.task('extend-blocks', function () {
+    gulp.src('./app/html/*.html')
+        .pipe(extender({annotations:true,verbose:false})) // default options
+        .pipe(gulp.dest('./'))
+});
+
+gulp.task('watch', ['browser-sync','compress', 'extend-pages', 'extend-blocks', 'css-libs', 'img', 'sass'], function() {
+    gulp.watch('app/libs/**/*', ['css-libs']); // Наблюдение за папкой libs
+    gulp.watch('app/img/!**!/!*', ['img']);// Наблюдение за папкой img
+    gulp.watch('app/sass/!**!/!*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
+    gulp.watch(['./app/html/pages/!*.html'], ['extend-pages']);// Наблюдение за HTML-файлами в папке html
+    gulp.watch('./app/html/pages/!*.html', browserSync.reload);
+    /*gulp.watch(['app/html/!*.html'], ['extend-blocks']);// Наблюдение за HTML-файлами в папке html*/
+    gulp.watch('app/js/!**/!*.js'); // Наблюдение за js-файлами
+=======
 gulp.task('watch', ['compress', 'extend', 'css-libs', 'img', 'sass'], function() {
     gulp.watch('app/libs/**/*', ['css-libs']); // Наблюдение за папкой libs
     gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img
@@ -109,6 +125,7 @@ gulp.task('watch', ['compress', 'extend', 'css-libs', 'img', 'sass'], function()
     gulp.watch(['app/html/*.html'], ['extend']);// Наблюдение за HTML-файлами
 
 
+>>>>>>> c56e22df8015ff4c6305bf5a1b5a2fd35a95a6a7
 });
 
 gulp.task('img', function() {

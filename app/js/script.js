@@ -33,11 +33,18 @@ $(document).ready(function () {
 
     /*single modal toogle block*/
     $('.menu-icon').click(function(){
-
         $(".top-menu").slideToggle("slow",function() {
-
         });
         return false;
     });
     /*close single modal toogle block*/
+
+    $('.menu-icon').click(function () {
+        if($(this).hasClass('menu-icon-active')){
+            $('.menu-icon').removeClass('menu-icon-active');
+        }
+        else {
+            $('.menu-icon').addClass('menu-icon-active');
+        }
+    });
 });
