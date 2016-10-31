@@ -1,11 +1,13 @@
 .top-menu{
-  position: relative;
+  position: absolute;
   width: 100%;
   float: left;
   display: none;
-  margin-top: -930px;
+  /*margin-top: -930px;*/
   z-index: 2;
   box-sizing: border-box;
+  top: 0;
+  left: 0;
   background-color: rgba(0,0,0,0.91);
   &__nav{
     position: relative;
