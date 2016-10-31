@@ -87,12 +87,29 @@
         font-weight: 100;
         line-height: 22px;
         font-style: italic;
+        display: block;
+        margin-top: 16px;
       }
       .news-descr{
-        font-size: 14px;
-        font-weight: 100;
-        line-height: 22px;
         font-family:$cyrlight;
+        font-size: 18px;
+        margin-top:5px;
+        margin-bottom:5px;
+      }
+      .more{
+        display: block;
+        border-top: 2px solid #dfdec0;
+        height: 42px;
+          font-family:$cyrlight;
+          font-size: 17px;
+          margin-top:5px;
+          color: #93472b;
+        padding-top: 7px;
+        box-sizing: border-box;
+        &:hover{
+          background-color: #93472b;
+          color:#fff;
+        }
       }
     }
   }
