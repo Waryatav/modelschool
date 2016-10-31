@@ -53,13 +53,61 @@
 }
 
 @media only screen and (max-width: 568px) {
+  .hexagon{
+    left: 13%!important;
+  }
   .faculties_course{
     .faculties_course-items{
       .faculties_course-item {
         width: 100%!important;
+
+        $size: 100vw;
+
+        .wrapper {
+          position: relative;
+          height: $size;
+          width: $size;
+          background: rgba(0, 0, 0, .2);
+          overflow: hidden;
+          margin: 5vh auto;
+        }
+
+        .w1 {
+          position: absolute;
+          top: 34%;
+          left: -20%;
+          height: $size / 1.73205081;
+          width: $size;
+          transform: translateY(-50%) rotate(120deg);
+          overflow: hidden;
+          z-index:1;
+        }
+
+        .w2 {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          height: $size / 1.73205081;
+          width: $size;
+          transform: translateY(-50%) rotate(-60deg);
+          overflow: hidden;
+        }
+
+        .w3 {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          height: $size / 1.73205081;
+          width: $size;
+          transform: translateY(-50%) rotate(-60deg);
+          overflow: hidden;
+        }
       }
     }
   }
+
+
+
 }
 
 @media only screen and (max-width: 420px) {
