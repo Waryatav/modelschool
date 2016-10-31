@@ -52,7 +52,13 @@
 }
 
 @media only screen and (max-width: 568px) {
-
+  .faculties_course{
+    .faculties_course-items{
+      .faculties_course-item {
+        width: 100%!important;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 420px) {

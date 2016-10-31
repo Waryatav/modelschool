@@ -24,23 +24,31 @@
 
 @media only screen and (max-width: 1025px) {
 
+  .faculties_course .faculties_course-items .faculties_course-item {
+    background: none;
+    height: 600px;
+  }
 
 }
 
 @media only screen and (max-width: 990px) {
-
+  .faculties_course-item {
+    width: 50% !important;
+  }
+  .faculties_course .faculties_course-items .faculties_course-item .course-img {
+    left: 53%;
+  }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 570px) {
 
-}
-
-@media only screen and (max-width: 680px) {
-
-}
-
-@media only screen and (max-width: 568px) {
-
+  .faculties_course{
+    .faculties_course-items{
+      .faculties_course-item {
+        width: 100%!important;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 420px) {

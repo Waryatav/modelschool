@@ -30,7 +30,11 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     .faculties_course-item{
-
+      background-image: url("/img/hexagon.png");
+      background-position: 49% 46px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      z-index: 1;
       margin-top: 50px;
       position: relative;
       width:33.3%;
@@ -169,6 +173,10 @@
           color: white;
           background-color: #a84525;
         }
+      }
+      .benefit-content{
+        overflow: hidden;
+        height: 60px;
       }
     }
   }
