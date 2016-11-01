@@ -1,0 +1,146 @@
+.team{
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 140px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .line{
+    margin-bottom: 34px;
+  }
+  .team_faculties_items{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    text-align: center;
+    background-image: url("../img/bg_girl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -100px 0;
+    h2{
+      color: #93462a;
+      font-family:'HelveticaNeueCyrThin';
+      font-size: 60px;
+      font-weight: 100;
+      text-transform: uppercase;
+      margin-top: 85px;
+    }
+    .line{
+      display: block;
+      position: relative;
+      width: 256px;
+      height: 1px;
+      background-color: #4c4547;
+      float: none;
+      margin: 50px auto;
+    }
+    p{
+      color: #4c4547;
+      font-size: 18px;
+      font-family:'HelveticaNeueCyrMedium';
+    }
+
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left;
+      box-sizing: border-box;
+      margin: 115px auto;
+      .item{
+        display: block;
+        position: relative;
+        width: 25%;
+        float: left;
+        box-sizing: border-box;
+        &__img{
+          display: block;
+          position: relative;
+          width: 80%;
+          height: 405px;
+          float: left;
+          box-sizing: border-box;
+          overflow: hidden;
+          img{
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &__txt{
+          display: block;
+          position: absolute;
+          right: 27px;
+          bottom: 0;
+          width: 234px;
+          height: 150px;
+          background-color: #dfdec0;
+          cursor: pointer;
+          -webkit-transition: bottom ease-out 300ms;
+          -moz-transition: bottom ease-out 300ms;
+          -o-transition: bottom ease-out 300ms;
+          transition: bottom ease-out 300ms;
+          .arrow{
+            display: block;
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            bottom: -21px;
+            right: 8px;
+            background-image: url("../img/arrow.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 21;
+          }
+          p{
+            display: block;
+            position: absolute;
+            color: #120c09;
+            font-family: 'HelveticaNeueCyrMedium';
+            font-size: 20px;
+            line-height: 1.5;
+            font-weight: normal;
+            text-transform: uppercase;
+            text-align: left;
+            padding-left: 25px;
+
+          }
+          &::after{
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 0;
+            bottom: -30px;
+            border-top: 30px solid #dfdec0;
+            border-left: 234px solid transparent;
+            content: "";
+          }
+        }
+        &__txt:hover{
+          background-color: #93462a;
+          bottom: -40px;
+          &::after{
+            border-top: 30px solid #93462a;
+          }
+          p{
+            color: #fefdfc;
+          }
+          .arrow{
+            display: block;
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            bottom: -21px;
+            right: 8px;
+            background-image: url("../img/arrow-active.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 21;
+          }
+        }
+      }
+
+  }
+}
