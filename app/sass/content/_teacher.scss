@@ -1,0 +1,115 @@
+.teacher{
+  h2{
+    color: #93462a;
+    font-family: $cyrlight;
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .teacher-img{
+    width: 366px;
+    height: 407px;
+    overflow: hidden;
+    margin:0 auto;
+    z-index: 2;
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .about-teacher{
+    margin-top: -132px;
+    width: 45%;
+   min-height: 474px;
+    background-color: #f3f0e3;
+    padding: 45px;
+    padding-right:150px;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    h4,p{
+      font-family:$cyrlight;
+      color: #4c4547;
+      font-size: 17px;
+    }
+    h4{
+      font-weight:bold;
+    }
+  }
+  .teacher-courses{
+    float: right;
+    width: 407px;
+    margin-top: -23px;
+    height: 365px;
+    background-color: #0c0504;
+    padding: 45px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    h4,a{
+      font-family:$cyrlight;
+
+    }
+    h4{
+      color: #4c4547;
+    }
+    a{
+      color: #a84424;
+    }
+    ul{
+      list-style-type: none;
+
+        li{
+          padding-bottom: 15px;
+          a{
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-size: 17px;
+            font-weight:bold;
+            position: relative;
+            margin-bottom:15px;
+            span{
+              font-size: 14px;
+              font-weight:200;
+            }
+            .icon-ok{
+              width: 30px;
+              height: 30px;
+              position: absolute;
+              left:-37px;
+            }
+          }
+
+      }
+    }
+  }
+
+}
+.teacher-gallery{
+  height: 514px;
+  width: 100%;
+  .small-img{
+    height: 100%;
+    overflow: hidden;
+    width: 25%;
+    float: left;
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .big-img{
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
