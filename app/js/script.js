@@ -35,6 +35,13 @@ $(document).ready(function () {
     $('.menu-icon').click(function(){
         $(".top-menu").slideToggle("slow",function() {
         });
+        $(".become_model").slideUp("slow",function() {
+        });
+        return false;
+    });
+    $('.become-model').click(function(){
+        $(".become_model").slideDown("slow",function() {
+        });
         return false;
     });
     /*close single modal toogle block*/

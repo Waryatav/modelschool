@@ -126,8 +126,10 @@ gulp.task('watch', ['compress', 'extend', 'css-libs', 'img', 'sass'], function()
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch(['app/html/pages/*.html'], ['extend']);// Наблюдение за HTML-файлами
     gulp.watch(['app/html/*.html'], ['extend']);// Наблюдение за HTML-файлами
-    //gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML-файлами
-    // gulp.watch('app/js/*', function() {
+    gulp.watch('./**/*.html', browserSync.reload); // Наблюдение за HTML-файлами
+    gulp.watch('app/js/**/*.js', ['compress']); // Наблюдение за js-файлами
+    //gulp.watch('app/js/*.js',['compress']);
+    // },     // gulp.watch('app/js/*', function() {
     //     gulp.run('compress');
     // }, browserSync.reload); // Наблюдение за JS файлами в папке js
 });
