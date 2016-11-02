@@ -1,0 +1,105 @@
+@media only screen and (max-width: 1930px) {
+
+}
+
+@media only screen and (max-width: 1690px) {
+
+}
+
+@media only screen and (max-width: 1450px) {
+
+}
+
+@media only screen and (max-width: 1390px) {
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 990px) {
+
+}
+
+@media only screen and (max-width: 770px) {
+
+}
+
+@media only screen and (max-width: 680px) {
+
+}
+
+@media only screen and (max-width: 568px) {
+
+}
+
+@media only screen and (max-width: 420px) {
+  .top-menu{
+    &__nav{
+      &_logo{
+        width: 117px;
+        height: 86px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+      } // _logo
+      nav{
+        margin-top: 114px;
+        .menu-item{
+          width: 100%;
+          margin-bottom: 50px;
+          .imgSpan{
+            margin-top: -20px;
+          } // imgSpan
+        } // menu-item
+      } // nav
+      &_contacts{
+        margin-bottom: 0;
+        .left, .right{
+          margin-bottom: 50px;
+          span{
+            width: 100%;
+          } // span
+          p{
+            width: 100%;
+          } // p
+        }
+        .left{
+          width: 100%;
+          span{
+            width: 15%;
+          }
+          p{
+            width: 85%;
+          }
+        }
+        .right{
+          width: 100%;
+          span{
+            width: 15%;
+          }
+          p{
+            width: 85%;
+          }
+        }
+      } // _contacts
+    } // __nav
+  } // __content
+}
+
+@media only screen and (max-width: 380px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+}
+
+
