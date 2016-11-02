@@ -1,0 +1,40 @@
+.maps{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  height: 600px;
+  h1 {
+    color: #93462a;
+    text-transform: uppercase;
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    font-family: $cyrmeduim;
+    font-size: 38px;
+    margin-bottom: 50px;
+    &:after {
+      position: absolute;
+      bottom: -45px;
+      left: calc(50% - 128px);
+      display: block;
+      width: 256px;
+      height: 1px;
+      background-color: #4c4547;
+      content: "";
+    }
+  }
+}
+.send-msg{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  background-image: url("..img/send.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
